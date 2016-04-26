@@ -1,8 +1,6 @@
 {
-  "islogin": true,
+  "islogin": false,
   "user": {
-    "accesstoken": "f5eea73b-5449-46bd-9735-106872f7b131",
-    "avatar_url": "https://avatars.githubusercontent.com/u/4457084?v=3&s=120",
-    "loginname": "wq123456"
+   
   }
 }
