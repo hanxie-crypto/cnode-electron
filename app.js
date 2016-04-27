@@ -54,7 +54,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "029d48d52b396ebaa0d9"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "bff96d28ee7ff0c2f3da"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -27056,15 +27056,9 @@
 
 	var createStoreWithMiddleware = undefined;
 	if (canUseDOM) {
-	  createStoreWithMiddleware = (0, _redux.compose)((0, _redux.applyMiddleware)(_reduxThunk2['default']))(
-	  //applyMiddleware(createLogger()),
-	  //devTools()
-
-	  //applyMiddleware(createLogger()),
-	  //devTools()
-	  _redux.createStore);
+	  createStoreWithMiddleware = (0, _redux.compose)((0, _redux.applyMiddleware)(_reduxThunk2['default']), (0, _redux.applyMiddleware)((0, _reduxLogger2['default'])()), (0, _reduxDevtools.devTools)())(_redux.createStore);
 	} else {
-	  createStoreWithMiddleware = (0, _redux.compose)((0, _redux.applyMiddleware)(_reduxThunk2['default']))(_redux.createStore);
+	  createStoreWithMiddleware = (0, _redux.compose)((0, _redux.applyMiddleware)(_reduxThunk2['default']), (0, _redux.applyMiddleware)((0, _reduxLogger2['default'])()), (0, _reduxDevtools.devTools)())(_redux.createStore);
 	}
 
 	function configureStore(initialState) {
@@ -70894,7 +70888,7 @@
 	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(3), RootInstanceProvider = __webpack_require__(11), ReactMount = __webpack_require__(13), React = __webpack_require__(66); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	/**
-	 * 个人简介
+	 * 增加帖子
 	 */
 	'use strict';
 
@@ -72541,6 +72535,9 @@
 
 	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(3), RootInstanceProvider = __webpack_require__(11), ReactMount = __webpack_require__(13), React = __webpack_require__(66); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
+	/**
+	 * 用户收藏
+	 */
 	'use strict';
 
 	Object.defineProperty(exports, '__esModule', {
@@ -72629,6 +72626,9 @@
 
 	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(3), RootInstanceProvider = __webpack_require__(11), ReactMount = __webpack_require__(13), React = __webpack_require__(66); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
+	/**
+	 * 用户消息
+	 */
 	'use strict';
 
 	Object.defineProperty(exports, '__esModule', {

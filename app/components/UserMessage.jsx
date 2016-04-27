@@ -1,3 +1,6 @@
+/**
+ * 用户消息
+ */
 import React from 'react';
 import {connect} from 'react-redux';
 import Table from 'material-ui/lib/table/table';

@@ -1,5 +1,5 @@
 /**
- * 个人简介
+ * 增加帖子
  */
 import React from 'react';
 import { connect } from 'react-redux';

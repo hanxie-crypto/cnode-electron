@@ -9,9 +9,9 @@ module.exports = {
      path.join(__dirname, 'app/client.jsx')
   ],
   output: {
-    path: __dirname + '/app/build/',
+    path: __dirname + '/',
     filename: 'app.js',
-    publicPath: '/app/build/'
+    publicPath: '/'
   },
   module: {
     loaders: [

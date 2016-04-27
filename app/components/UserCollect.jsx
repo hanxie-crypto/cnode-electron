@@ -1,3 +1,6 @@
+/**
+ * 用户收藏
+ */
 import React from 'react';
 import TopicList from './TopicList';
 import { connect } from 'react-redux';
