@@ -14,7 +14,7 @@ const rightPart = (
                     <IconButton
                         style={{marginTop:'-15'}}
                         iconClassName="muidocs-icon-custom-github"
-                        href="https://www.baidu.com/"
+                        href="https://github.com/wq123456/cnode-electron"
                         linkButton={true}/>
                 </div>
 );
