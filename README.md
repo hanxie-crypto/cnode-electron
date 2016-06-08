@@ -16,7 +16,7 @@
 浏览器开发</br>
 1 git clone https://github.com/wq123456/cnode-electron.git </br>
 2 cd cnode-electron & npm install </br>
-3 node server.js </br>
+3 npm run dev </br>
 4 打开浏览器 http://127.0.0.1:3000</br>
 
 electron 预览</br>
