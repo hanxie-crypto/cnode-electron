@@ -1,17 +1,18 @@
 var webpack = require('webpack');
 var path = require('path');
 var nodeModulesPath = path.resolve(__dirname, 'node_modules');
+var devserverpath = 'http://127.0.0.1:3000/';
 module.exports = {
   // entry: './js/entry.js',
   entry: [
-    'webpack-dev-server/client?http://127.0.0.1:3000/', // WebpackDevServer host and port
+    `webpack-dev-server/client?${devserverpath}`, // WebpackDevServer host and port
     'webpack/hot/only-dev-server',
      path.join(__dirname, 'app/client.jsx')
   ],
   output: {
     path: __dirname + '/',
     filename: 'app.js',
-    publicPath: '/'
+    publicPath: devserverpath
   },
   module: {
     loaders: [
