@@ -32,11 +32,14 @@ electron 预览</br>
 3 双击Elecron.app 即可看到效果。然后可以自行更改文件名图标等 </br>
 ps: 官方的asar方法打包限制太多，不好使。 npm install 安装electron-prebuilt可能会失败，建议单独对其进行安装
 
-最近收到打包的问题，我这边用的一种简单的办法
+最近收到打包的问题，我这边用的一种简单的办法 </br>
 下载官网发布的demo然后修改</br>
 官网发布地址 https://github.com/electron/electron/releases/ </br>
-我们开发完了使用webpack将前端部分输出app.js ,将app.js和相关的html,js,css,node_modules一起拿出来 </br>创建一个文件夹命名为app </br>
-然后mac上 右键打开官网的demo，把app这个文件夹复制到Contents->Resources里面 </br>
+比如你想在mac 上 发布应用,下载 electron-v1.3.3-darwin-x64.zip </br>
+解压后 右键 electron 显示包内容 </br>
+在 Contents->Resources 创建 app 文件夹 </br>
+然后把自己项目用到的依赖以及资源文件放到里面就可以 </br>
+之后再去修改 electron 变成自己的应用名 </br>
 windows上同理官方提供的模板中把自己的内容放在resources文件夹里 </br>
 ![Alt text](https://github.com/wq123456/cnode-electron/blob/master/preview/packshow1.jpg) </br>
 ![Alt text](https://github.com/wq123456/cnode-electron/blob/master/preview/packshow2.jpg) </br>
