@@ -65,6 +65,7 @@
   },
   "dependencies": {
     "nconf": "^0.8.4",
-    "node-notifier": "^4.5.0"
+    "node-notifier": "^4.5.0",
+    "react-render-html": "^0.1.4"
   }
 }
