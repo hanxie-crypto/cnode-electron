@@ -33,6 +33,8 @@ electron 预览</br>
 ps: 官方的asar方法打包限制太多，不好使。 npm install 安装electron-prebuilt可能会失败，建议单独对其进行安装
 
 最近收到打包的问题，我这边用的一种简单的办法
+下载官网发布的demo然后修改
+官网发布地址 https://github.com/electron/electron/releases/
 我们开发完了使用webpack将前端部分输出app.js ,将app.js和相关的html,js,css,node_modules一起拿出来 创建一个文件夹命名为app
 然后mac上下载官方提供的模板右键显示包内容，把app这个文件夹复制到Contents->Resources里面
 windows上同理官方提供的模板中把自己的内容放在resources文件夹里
